@@ -4,7 +4,15 @@ node_modules
 .vscode
 .DS_Store
 storage/*.log
+storage/framework/sessions
+storage/framework/cache
+storage/framework/views
 tests
-phpunit.xml
+.phpunit.result.cache
+docker-compose.yml
+Dockerfile
 .gitignore
 README.md
+*.sqlite
+*.log
+.idea/
