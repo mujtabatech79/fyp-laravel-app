@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/mujtabatech79/devops-lab-app.git'
+                git branch: 'main', url: 'https://github.com/mujtabatech79/fyp-laravel-app.git'
             }
         }
 
@@ -29,7 +29,7 @@ pipeline {
     }
 
     post {
-        success { echo '✅ laravel-app Deployed Successfully!' }
+        success { echo '✅ Laravel App Deployed Successfully!' }
         failure  { echo '❌ Deployment Failed — Check Logs!'   }
     }
 }
