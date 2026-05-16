@@ -1,0 +1,17 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Ensure Docker is running
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Check Laravel container status
+      shell: docker ps | grep laravel-app
+      register: container_status
+
+    - name: Show container status
+      debug:
+        msg: "{{ container_status.stdout }}"
