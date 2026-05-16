@@ -1,0 +1,17 @@
+{
+  "title": "Laravel App Monitoring",
+  "panels": [
+    {
+      "title": "CPU Usage",
+      "type": "stat"
+    },
+    {
+      "title": "Memory Usage", 
+      "type": "stat"
+    },
+    {
+      "title": "HTTP Requests",
+      "type": "timeseries"
+    }
+  ]
+}
